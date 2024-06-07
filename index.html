@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Link stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Icon -->
+    <link rel="icon" href="./Images/weather.svg">
+</head>
+<body>
+    <div class="title ">
+        <h3>weather application</h3>
+    </div>
+    <div class="container">
+        
+        <!-- Search Box -->
+        <div class="search-box " id="search-box">
+            <i class='bx bx-map'></i>
+            <input id="place" type="text"  placeholder="Enter Your Location" aria-describedby="button-addon2" onkeypress="return enterkeypress(event)">
+            <button class='bx bx-search-alt-2'  type="button" onclick="search()" ></button>
+          </div>
+          <!-- Temperature and image -->
+          <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather">
+                        <img id="img" src="" alt="">
+                        <p  class="temp" id="temp"><span></span></p>
+                        <p id="desp" class="desp"></p>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="weather-details">
+             <!-- Humidity -->
+            <div class="humidity">
+                <i id="hs" class='bx bx-water'></i>
+                <div class="text">
+                    <div id="humi" class="humi-info">
+                        <span></span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Wind Speed -->
+        <div class="wind">
+            <i id="ws" class='bx bx-wind'></i>
+            <div class="text">
+                <div id="wind" class="wind-info">
+                   <span></span> 
+                   
+                </div>
+                
+            </div>
+        </div>
+        </div>
+       
+
+        
+    </div>
+    
+    <!-- <div class="not-found">
+        <div class="box">
+            <img src="./Images/404.jpg" alt="">
+            <p>Location Not Found</p>
+        </div>
+    </div> -->
+    
+</body>
+<script src="logic.js"></script>
+<!-- <script src="./clock.js"></script> -->
+</html>
